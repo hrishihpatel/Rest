@@ -32,3 +32,27 @@ Please note that POST is neither safe nor idempotent, and invoking two identical
 ### Example request URIs
 * HTTP POST http://www.appdomain.com/users
 * HTTP POST http://www.appdomain.com/users/123/accounts
+
+## HTTP Put
+Use PUT APIs primarily to update existing resource (if the resource does not exist, then API may decide to create a new resource or not). If a new resource has been created by the PUT API, the origin server MUST inform the user agent via the HTTP response code 201 (Created) response and if an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request.
+
+If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.
+
+```
+The difference between the POST and PUT APIs can be observed in request URIs. POST requests are made on resource collections, whereas PUT requests are made on an individual resource.
+```
+
+### Example request URIs
+* HTTP PUT http://www.appdomain.com/users/123
+* HTTP PUT http://www.appdomain.com/users/123/accounts/456
+
+## HTTP DELETE
+As the name applies, DELETE APIs are used to delete resources (identified by the Request-URI).
+
+A successful response of DELETE requests SHOULD be HTTP response code ```200 (OK)``` if the response includes an entity describing the status, ```202 (Accepted)``` if the action has been queued, or ```204 (No Content)``` if the action has been performed but the response does not include an entity.
+
+DELETE operations are idempotent. If you DELETE a resource, it’s removed from the collection of resources. Repeatedly calling DELETE API on that resource will not change the outcome – however, calling DELETE on a resource a second time will return a ```404 (NOT FOUND)``` since it was already removed. Some may argue that it makes the DELETE method non-idempotent. It’s a matter of discussion and personal opinion.
+
+If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.
+
+
