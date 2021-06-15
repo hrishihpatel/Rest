@@ -17,3 +17,12 @@ Roy Fielding has never mentioned any recommendation around which method to be us
 Ideally, everything that is needed to change the resource state shall be part of API response for that resource – including methods and in what state they will leave the representation.
 
 # HTTP Methods
+
+
+# HTTP Verbs
+There are 4 commonly used HTTP verbs in REST system:
+
+* GET — retrieve a specific resource (by id) or a collection of resources
+* POST — create a new resource
+* PUT — update a specific resource (by id)
+* DELETE — remove a specific resource by id
