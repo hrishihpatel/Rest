@@ -25,7 +25,7 @@ There are 4 commonly used HTTP method in REST system:
 * DELETE — remove a specific resource by id
 
 You can learn more abou these HTTP methods in the following document:
-* HTTP Methods
+* [HTTP Methods](HTTPMethods.md)
 
 # Choosing an HTTP Status Code and Standalization
 HTTP defines these standard status codes that can be used to convey the results of a client’s request. The status codes are divided into the five categories.
