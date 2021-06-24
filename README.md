@@ -24,7 +24,7 @@ There are 4 commonly used HTTP method in REST system:
 * PUT — update a specific resource (by id)
 * DELETE — remove a specific resource by id
 
-You can learn more abou these HTTP methods in the following document:
+You can learn more about these HTTP methods in the following document:
 * [HTTP Methods](HTTPMethods.md)
 
 # Choosing an HTTP Status Code and Standalization
@@ -36,7 +36,8 @@ HTTP defines these standard status codes that can be used to convey the results 
 * 4xx: Client Error – This category of error status codes points the finger at clients.
 * 5xx: Server Error – The server takes responsibility for these error status codes.
 
-
+You can lean more about HTTP Status code in the following document:
+* [HTTP Status Codes](https://httpstatuses.com/)
 
 # Security
 
