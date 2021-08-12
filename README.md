@@ -43,8 +43,8 @@ You can lean more about HTTP Status code in the following document:
 The following is a highlight of some of the endpoint naming best practices.  For a full list of best practices view https://restfulapi.net/resource-naming/.
 
 * Resources should be represented using nouns instead of verbs (no CRUD names). For example, don't use Get/Read/Fetch in your resource naming
-* Heirarchical relationships should be separated by a forward slash (/) and use dashes (-) instead of underscores for multi-word resource names:  <div style="display: inline">https://myservice.domain.com/catalog/bikes/mountain-bikes</div>
-* Use query components to filter data:  <div style="display: inline">https://myservice.domain.com/catalog/bikes/mountain-bikes?color=green&brand=coolbikes</div>
+* Heirarchical relationships should be separated by a forward slash (/) and use dashes (-) instead of underscores for multi-word resource names:  `https://myservice.domain.com/catalog/bikes/mountain-bikes`
+* Use query components to filter data:  `https://myservice.domain.com/catalog/bikes/mountain-bikes?color=green&brand=coolbikes`
 
 
 # Documentation
