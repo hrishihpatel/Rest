@@ -48,4 +48,10 @@ The following is a highlight of some of the endpoint naming best practices.  For
 
 
 # Documentation
-Altho documentation isn't something we should really cover part of REST API but it's important to utilize tools like swagger to represent your API endpoints. This should cover what your API expects and what it outputs. Most people implement Swagger but do not go the extra mile to document properly. Without going too deep into the how let's talk about what you should document. it's very important when you implement swagger documentation you cover what is required for your endpoint, what different types of response an consume can expect with status codes, don't forget to include your 50x, and 40x errors, and lastly document your required authentication type.
+Documentation isn't something we should cover as part of REST, but it's important to utilize tools like [Swagger](https://swagger.io/) to represent your API endpoints. This should cover what your API expects and what it outputs. Most people implement Swagger but do not go the extra mile to document properly. Without going too deep into the how let's talk about what you should document. It's very important when you implement swagger documentation you cover what is required for your endpoint:
+
+ * Request models
+ * Response models
+ * HTTP status code
+ * Authentication
+ * Error message structure
