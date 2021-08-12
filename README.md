@@ -13,7 +13,7 @@ REST, or REpresentational State Transfer, is an architectural style for providin
 REST request generally consists of:
 
 * an HTTP verb, which defines what kind of operation to perform.
-* a hdeader, which allows the client to pass along information about the request.
+* a header, which allows the client to pass along information about the request.
 * a path to resource and message body containing data if required.
 
 # Resource Methods
@@ -21,7 +21,7 @@ There are 4 commonly used HTTP method in REST system:
 
 * GET — retrieve a specific resource (by id) or a collection of resources
 * POST — create a new resource
-* PUT — update a specific resource (by id)
+* PUT/PATCH — update a specific resource (by id)
 * DELETE — remove a specific resource by id
 
 You can learn more about these HTTP methods in the following document:
@@ -38,6 +38,13 @@ HTTP defines these standard status codes that can be used to convey the results 
 
 You can lean more about HTTP Status code in the following document:
 * [HTTP Status Codes](https://httpstatuses.com/)
+
+# Endpoint Naming
+The following is a highlight of some of the endpoint naming best practices.  For a full list of best practices view https://restfulapi.net/resource-naming/.
+
+* Resources should be represented using nouns instead of verbs (no CRUD names). For example, don't use Get/Read/Fetch in your resource naming
+* Heirarchical relationships should be separated by a forward slash (/) and use dashes (-) instead of underscores for multi-word resource names:  https://myservice.domain.com/catalog/bikes/mountain-bikes
+* Use query components to filter data: https://myservice.domain.com/catalog/bikes/mountain-bikes?color=green&brand=coolbikes
 
 
 # Documentation
